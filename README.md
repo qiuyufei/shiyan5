@@ -69,6 +69,7 @@
 ## 输出结果：
 
     https://github.com/qiuyufei/shiyan5/blob/main/qyf/h.png
+    https://github.com/qiuyufei/shiyan5/blob/main/qyf/i.png
 
     
 ## 实验感想：
