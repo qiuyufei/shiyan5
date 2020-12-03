@@ -67,9 +67,9 @@
 		}
     ···
 ## 输出结果：
+
     https://github.com/qiuyufei/shiyan5/blob/main/qyf/h.png
-    
-    https://github.com/qiuyufei/shiyan5/blob/main/qyf/i.png
+
     
 ## 实验感想：
     ·首先巩固了try方法与while循环的用法。
