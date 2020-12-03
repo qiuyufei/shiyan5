@@ -39,27 +39,36 @@
     ·掌握异常处理结构
 
 ## 实验过程：
-    ·首先在Students.java中创建Personner父类，并赋予其子类可能用到的元素，然后将学生还有老师的类继承（extends）父类并添加特定元素和属性，从而完成Students.java。
-    ·然后在LIst.java中使用set方法写入相应信息，在使用get方法调用相应的信息，然后调用并输出输出相应结果，从而达到测试主类，模拟选课，模拟退课，展示信息的操作。
+    ·首先在Students.java中创出一个学生类，并赋予相应的属性。
+    ·其次在Tist.java中实现取出和写入A,B文件，并使用try方法和while循环来实现古诗的规格化。
+    ·然后在FindWord.java实现查询功能
     ·其他具体详情见核心代码环节
 ## 核心代码：
-    ·1，定义父类，继承代码展示：
+    ·1，输出字节流和输入字节流
     ···
-    class personner
-    public class Students extends Personner{}
-    class Teacher extends Personne{}
+    FileReader fInputStream = new FileReader("D:\\homework\\A.txt");//读文件
+    FileWriter fOutputStream  = new FileWriter("D:\\homework\\B.txt")){//重新写入文件	   
     ···
-    ·2，这里我们需要用到java.text.SimpleDateFormat类的format方法,其中可以指定年月日时分秒的模式字符串格式。
+    ·2，规格化古诗并完成需要天际的要求
     ···
-    import java.text.SimpleDateFormat;
-    import java.util.Date;
-    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+      char[] ch=new char[14];//设置有14个字符
+		  while ((fInputStream.read(ch)) !=-1) {
+		    st.append(ch, 0,7);
+		    st.append("，");
+		    st.append(ch, 7, 7);
+		    st.append("。"+"\n");
+		  }
+		  Student strs=new Student();
+		  System.out.println(st);
+	     fOutputStream.write(new String(st));
+	     
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
     ···
-    ·3，使用set写入，get调用输出。
 ## 输出结果：
-![](https://github.com/qiuyufei/shiyan3/blob/main/1.png)
 
 ## 实验感想：
-    ·首先明确了java代码的大框架，明确了子类父类的关系可以使用继承，一个子类只能有一个父类。
-    ·其次目前可以比较熟练的使用set和get方法，来达成自己的目的。
+    ·首先巩固了try方法与while循环的用法。
+    ·其次知道了读取文件的操作和写入文件的操作应该如何实现。
     ·然后此次代码的完成在没有思路时完成的很困难，去同学哪里取了不少经，以后会匀出时间去钻研研究。
